@@ -26,7 +26,6 @@ func rotate_camera(delta):
 	var x = deg_to_rad(x_rot)
 	var y = deg_to_rad(y_rot)
 	var dst_r = Vector3(x, y, 0)
-	print_debug(curr_r.lerp(dst_r, ROT_SPEED*delta))
 	$Pivot.set_rotation(curr_r.lerp(dst_r, ROT_SPEED*delta))
 
 
